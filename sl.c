@@ -279,6 +279,8 @@ int add_TGV(int x)
 
     int y, i, dy = 0;
 
+    if (NUMBER < 0)
+        NUMBER = 4;
     if (x < - TGVLENGTH)  return ERR;
     y = LINES / 2 - 5;
 
@@ -297,7 +299,7 @@ int add_TGV(int x)
         add_man(y + 2, x + 14);
 
         add_man(y + dy + 3, x + 85);
-        add_man(y + dy + 3, x + 90);
+	add_man(y + dy + 3, x + 90);
         add_man(y + dy + 3, x + 95);
         add_man(y + dy + 3, x + 100);
     }
